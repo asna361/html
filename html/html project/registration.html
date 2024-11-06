@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showmessage(){
+            alert("registered");
+        }
+            
+        
+    </script>
+</head>
+
+<style>
+   .background{
+    background-color: bisque;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 5px;
+    padding-bottom: 2px;
+
+}
+
+.border{
+             border:2px solid black;
+              box-shadow: 0 4px 8px;
+              margin-top: 100px;
+              margin-bottom: 100px;
+              margin-right: 600px;
+              margin-left: 500px;
+              text-align: center;
+              
+
+}
+
+</style>
+
+
+<body>
+    <form>
+    <div class="background" style="text-align: center;">
+    <h1 style="text-align: center;" >CLASS REGISTRATION</h1>
+    <h3 style="text-align: center;">Fill Out The Form Carefully For Registration</h3>
+    
+    
+    
+      <label>First Name</label>
+      <input type="text" name="first name" required> 
+
+      <label>Middle Name</label>
+      <input type="text" name="middle name" required> 
+
+      <label>Last Name</label>
+      <input type="text" name="last name" required> <br> <br>
+
+      <label>Address:</label><br>
+      <textarea id="address" name="address" rows="3" required></textarea> <br> <br>
+
+      <label>Student Email:</label>
+      <input type="email" id="email" placeholder="name@gmail.com" required>  <br> <br>
+
+      <label>Phone:</label>
+      <select>
+        <option value="default">+91</option>
+    </select>
+<input type="text" placeholder="phone" required><br><br> 
+        <label>Gender:</label>
+
+        <select>  
+            <option value=""disabled selected>select</option> 
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+        </select>
+
+        <label>Course:</label>
+        <select>
+            <option value=""disabled selected>select</option>
+            <option value="science">Science</option>
+            <option value="commerce">Commerce</option>
+            <option value="humanties">Humanties</option>
+        </select> <br> <br>
+
+        <button style="color: #004d44;" onclick="showmessage()">Submit</button>
+        <button style="color:#004d44;">Reset</button>
+    </form>
+    </div>
+</body>
+</html>

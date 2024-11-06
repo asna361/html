@@ -1,0 +1,89 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign-up.css">
+
+</head>
+<body>
+     <form onsubmit="return validateForm()"><!--Added onsubmit event to call validate form-->
+          <div class="background">
+               <div class="sign-up" style="text-align: center;" method="post">          
+          <h2>SIGN UP</h2>
+
+     <div class="input-container">
+        <label for="email">Email:</label>
+     <input type="email" id="email" required> <br> <br>
+     
+     <div class="password-container">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required /> <br><br>
+    </div>
+    
+    <div class="password-container">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm your password" required />
+        <small id="error-message" style="color: red; display: none;">password do not match</small>
+    </div>
+    
+    <div class="show-password-container">
+        <input type="checkbox" id="showPasswordCheckbox" onclick="togglePasswordVisibility()" />
+        <label for="showPasswordCheckbox">Show Password</label>
+    </div>
+    
+
+             <button type="submit">Sign Up</button> <br>
+
+             <!--link to dsign in page-->
+
+<!-- <p>Already have an account?<a href="signin .html">Sign In</a></p> -->
+
+            </div>
+         </div>
+        </div>
+    </form>
+
+
+     <script>
+        function togglePasswordVisibility() {
+    const passwordInput = document.getElementById("password");
+    const confirmPasswordInput = document.getElementById("confirmPassword");
+    const showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
+
+    // Toggle password visibility based on checkbox status
+    
+
+
+     if  (showPasswordCheckbox.checked) {
+        passwordInput.type = "text";
+        confirmPasswordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+        confirmPasswordInput.type = "password";
+    }
+}
+
+function validateForm() {
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            const errorMessage = document.getElementById("error-message");
+
+
+            //check if passwords match
+
+            if (password !== confirmPassword) {
+                errorMessage.style.display = "block"; // Show error message if passwords do not match
+                return false; // Prevent form submission
+            }
+
+            errorMessage.style.display = "none"; // Hide error message if passwords match
+            window.location.href = "signin.html";//redirect to signin.htmlafter successfully v alidation
+            return false; // prev
+        }
+
+     </script>
+        </body>
+            </html>
+

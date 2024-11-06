@@ -1,0 +1,43 @@
+
+
+
+
+form{
+    border: 3px #004d40;
+}
+
+
+
+#sign-in{
+    color: black;
+
+    }
+    
+    body{
+        background-color: #f0f0f0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .signin{
+        background-color: black;
+        border-radius: 10px;
+        padding: 20px;
+        margin: auto ;
+    }
+
+ 
+
+button{
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    
+    
+}
+button:hover{
+    background-color:#004d40;
+}

@@ -1,0 +1,192 @@
+<!-- Inline javascript
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline javascript</title>
+</head>
+<body>
+    <button onclick="alert('Button clicked!')">click Me</button>
+</body>
+</html> -->
+
+
+<!-- internal javascript -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>internal javascript</title>
+    <script>
+        function showMessage() {
+            alert("Hello from Javascript");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showMessage()">click Me</button>
+</body>
+</html> -->
+
+<!-- External javascript -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External javascript</title>
+    <script src="javascript.js"></script>
+</head>
+<body>
+ <button onclick="showMessage()">Click Me</button>   
+</body>
+</html> -->
+
+<!-- console.log -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> hello world </h1>
+    <script>
+        console.log("hello console")
+    </script>
+</body>
+</html> -->
+
+<!-- To change content by Id -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "header">Welcome</h1>
+    <script>
+        document.getElementById("header").innerHTML="Good Morning";
+    </script>
+</body>
+</html> -->
+
+<!-- to change contentby Class -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="header1">welcome</h2> -->
+    <!-- <h3 class="header1">welcome To</h3>
+    <h4 class="header2">warm</h4>
+    <h5 class="header2">hello</h5>
+    <script>
+        document.getElementsByClassName("header1")[0].innerHTML="Good Evening";
+        document.getElementsByClassName("header1")[1].innerHTML="Good Afternoon";
+        document.getElementsByClassName("header2")[0].innerHTML="Good Night"
+        document.getElementsByClassName("header2")[1].innerHTML="world"
+    </script>
+</body>
+</html> -->
+
+<!-- to change content bt Tag name -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 tag="Main">Good bye</h1>
+    <script>
+        document.getElementsByTagName("h1")[0].innerHTML="Good";
+    </script>
+</body>
+</html> -->
+
+<!-- Manipulating Style Property -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Good Luck</h1>
+    <script>
+        document.getElementById("header").style.color="blue";
+        document.getElementById("header").style.backgroundColor="black";
+    </script>
+</body>
+</html> -->
+
+
+<!-- display nun and display Block -->
+
+<!-- Display nun= hide the element -->
+ <!-- Display Block=show the element -->
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1 id="hello world">wonderful</h1>
+    <script>
+        document.getElementById("hello world").style.display="Block";
+        document.getElementById("hello world").style.display="None";
+    </script>
+     </body>
+ </html> -->
+
+
+  <!-- Variable -->
+
+  <!-- <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="hello">excellent</h1>
+    <script>
+        var a=document.getElementById("hello");
+        a.innerHTML="world";
+        a.style.fontSize="50px";
+        a.style.color="yellow";
+    </script>
+  </body>
+  </html> -->
+
+  <!-- FUNCTION -->
+   
+<script>
+  function greet(name){
+    return "hello,"+name+"!"
+  }
+  console.log(greet("smith"))
+  </script>

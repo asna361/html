@@ -1,0 +1,50 @@
+.sign-up{
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 600px;
+    margin-left: 500px;
+    
+
+
+}
+.sign-up {
+    color: black;
+}
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, Helvtica, sans-serif;
+}
+sign up{
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+}
+button{
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #004d40;
+}
+.background{
+    background-image: url("WhatsApp Image 2024-10-17 at 11.11.33_d422482b.jpg");
+    height: 100vh;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.show-password-container{
+    margin-top: 10px;
+    font-size: 14px;
+}
